@@ -1,23 +1,18 @@
-let traitList = [
-    { quality: "agreeable", queries: 5 },
-    { quality: "conscientious", queries: 5 },
-    { quality: "extraverted", queries: 5 },
-    { quality: "neurotic", queries: 5 },
-    { quality: "open to experience", queries: 5 }
-]
+const submit = function () {
+    let input = []
+    for (i = 1; i <= 10; i++) {
+        input.push(parseInt($(`#q${i}`)[0].value));
+    }
+    $.ajax({
+        url: "/api/employees",
+        method: "POST",
+        data: input
+    }).then(function (response) {
 
-for (i = 0; i < 10; i++) {
-    let x = Math.floor(Math.random() * traitList.length)
-    let y = Math.floor(Math.random() * traitList.length)
-    while (x === y) {
-        y = Math.floor(Math.random() * traitList.length)
-    }
-    console.log(`Are you more ${x} or ${y}?`)
-    traitList[x].queries--;
-    traitList[y].queries--;
-    if (traitList[x].queries===0){
-        
-    }
+    })
 }
 
-// $.ajax
+$("#submit").on("click", function (event) {
+    event.preventDefault();
+    submit();
+})

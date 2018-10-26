@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
     <title>Employee Finder | Survey</title>
 </head>
 <body>
     <h1>Employee Finder Survey</h1>
     <p>1. Are you more agreeable or conscientious?</p>
-    <select>
+    <select id="q1">
         <option value="1">Much more agreeable</option>
         <option value="2">Somewhat more agreeable</option>
         <option value="3" selected="selected">About the same</option>
@@ -17,7 +19,7 @@
         <option value="5">Much more conscientious</option>
     </select>
     <p>2. Are you more extraverted or neurotic?</p>
-    <select>
+    <select id="q2">
         <option value="1">Much more extraverted</option>
         <option value="2">Somewhat more extraverted</option>
         <option value="3" selected="selected">About the same</option>
@@ -25,7 +27,7 @@
         <option value="5">Much more neurotic</option>
     </select>
     <p>3. Are you more open to experience or agreeable?</p>
-    <select>
+    <select id="q3">
         <option value="1">Much more open to experience</option>
         <option value="2">Somewhat more open to experience</option>
         <option value="3" selected="selected">About the same</option>
@@ -33,7 +35,7 @@
         <option value="5">Much more agreeable</option>
     </select>
     <p>4. Are you more conscientious or extraverted?</p>
-    <select>
+    <select id="q4">
         <option value="1">Much more conscientious</option>
         <option value="2">Somewhat more conscientious</option>
         <option value="3" selected="selected">About the same</option>
@@ -41,7 +43,7 @@
         <option value="5">Much more extraverted</option>
     </select>
     <p>5. Are you more neurotic or open to experience?</p>
-    <select>
+    <select id="q5">
         <option value="1">Much more neurotic</option>
         <option value="2">Somewhat more neurotic</option>
         <option value="3" selected="selected">About the same</option>
@@ -49,7 +51,7 @@
         <option value="5">Much more open to experience</option>
     </select>
     <p>6. Are you more agreeable or extraverted?</p>
-    <select>
+    <select id="q6">
         <option value="1">Much more agreeable</option>
         <option value="2">Somewhat more agreeable</option>
         <option value="3" selected="selected">About the same</option>
@@ -57,7 +59,7 @@
         <option value="5">Much more extraverted</option>
     </select>
     <p>7. Are you more conscientious or neurotic?</p>
-    <select>
+    <select id="q7">
         <option value="1">Much more conscientious</option>
         <option value="2">Somewhat more conscientious</option>
         <option value="3" selected="selected">About the same</option>
@@ -65,7 +67,7 @@
         <option value="5">Much more neurotic</option>
     </select>
     <p>8. Are you more extraverted or open to experience?</p>
-    <select>
+    <select id="q8">
         <option value="1">Much more extraverted</option>
         <option value="2">Somewhat more extraverted</option>
         <option value="3" selected="selected">About the same</option>
@@ -73,7 +75,7 @@
         <option value="5">Much more open to experience</option>
     </select>
     <p>9. Are you more neurotic or agreeable?</p>
-    <select>
+    <select id="q9">
         <option value="1">Much more neurotic</option>
         <option value="2">Somewhat more neurotic</option>
         <option value="3" selected="selected">About the same</option>
@@ -81,14 +83,18 @@
         <option value="5">Much more agreeable</option>
     </select>
     <p>10. Are you more open to experience or conscientious?</p>
-    <select>
+    <select id="q10">
         <option value="1">Much more open to experience</option>
         <option value="2">Somewhat more open to experience</option>
         <option value="3" selected="selected">About the same</option>
         <option value="4">Somewhat more conscientious</option>
         <option value="5">Much more conscientious</option>
     </select>
+    <br><br><br>
+    <button id="submit">Submit</button>
+    <br><br><br>
 
-    <script src="/js/survey.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/survey.js"></script>
 </body>
 </html>
