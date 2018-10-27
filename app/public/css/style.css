@@ -4,17 +4,35 @@
     width: 400px;
 }
 
+.modal-body p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
 body {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif
+}
+
+.header {
+    background-color: navy;
+    color: white;
+    top: 0;
+    padding: 10px 0px;
+}
+
+h1 {
+    margin: 10px 0px
 }
 
 input {
     margin: 5px 0px;
     width: 300px;
-    font-size: 20px;
+}
+
+p {
+    margin: 10px 0px;
 }
 
 button {
-    margin: 40px 0px 35px;
+    margin: 30px 0px;
 }

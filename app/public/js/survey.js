@@ -12,9 +12,11 @@ const submit = function () {
         data: {
             name: name,
             photo: photo,
-            scores: scores }
+            scores: scores
+        }
     }).then(function (response) {
-        console.log(response)
+        console.log("lol");
+        $(".modal-body").html(`<img src="${response.photo}"><br><p>${response.name}</p>`);
     })
 }
 
