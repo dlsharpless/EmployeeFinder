@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
     <title>Employee Finder | Survey</title>
 </head>
 <body>
     <h1>Employee Finder Survey</h1>
+    <div id="topInput">
+        <label for="name">Name:</label>
+        <input id="name"><br>
+        <label for="photo">Photo URL:</label>
+        <input id="photo"><br>
+    </div>
     <p>1. Are you more agreeable or conscientious?</p>
     <select id="q1">
         <option value="1">Much more agreeable</option>
@@ -90,9 +97,8 @@
         <option value="4">Somewhat more conscientious</option>
         <option value="5">Much more conscientious</option>
     </select>
-    <br><br><br>
+    <br>
     <button id="submit">Submit</button>
-    <br><br><br>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/survey.js"></script>

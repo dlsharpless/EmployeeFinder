@@ -1,12 +1,18 @@
 const submit = function () {
+    let name = $("#name").val();
+    let photo = $("#photo").val();
     let scores = []
     for (i = 1; i <= 10; i++) {
-        scores.push($(`#q${i}`)[0].value);
+        scores.push($(`#q${i}`).val());
     }
+
     $.ajax({
         url: "/api/employees",
         method: "POST",
-        data: { scores: scores }
+        data: {
+            name: name,
+            photo: photo,
+            scores: scores }
     }).then(function (response) {
         console.log(response)
     })

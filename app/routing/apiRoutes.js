@@ -7,9 +7,6 @@ router.get("/api/employees", function (req, res) {
 });
 
 router.post("/api/employees", function (req, res) {
-    // res.json(req.body);
-    // employeeList.push(req.body)
-    console.log("Hi 1");
     for (i = 0; i < req.body.scores.length; i++) {
         req.body.scores[i] = parseInt(req.body.scores[i])
     }
@@ -20,14 +17,13 @@ router.post("/api/employees", function (req, res) {
         for (j = 0; j < req.body.scores.length; j++) {
             totalDifferences[i] += Math.abs(req.body.scores[j] - employeeList[i].scores[j])
         }
-        if (i=0||totalDifferences[i]<similarEmployee[1]){
+        if (i === 0 || totalDifferences[i] < similarEmployee[1]) {
             similarEmployee[0] = i;
-            similarEmployee[1] = totalDifferences[i]
+            similarEmployee[1] = totalDifferences[i];
         }
     }
-    console.log("Hi 2");
-    console.log(employeeList[similarEmployee[0]]);
-    res.json("Hello")
+    employeeList.push(req.body);
+    res.json(employeeList[similarEmployee[0]])
 });
 
 module.exports = router;
