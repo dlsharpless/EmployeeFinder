@@ -11,13 +11,15 @@
 
 body {
     text-align: center;
+    background-color: whitesmoke;
 }
 
 .header {
     background-color: navy;
-    color: white;
+    color: whitesmoke;
     top: 0;
     padding: 10px 0px;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -26,11 +28,16 @@ h1 {
 
 input {
     margin: 5px 0px;
-    width: 300px;
+    width: 270px;
 }
 
 p {
     margin: 10px 0px;
+}
+
+select {
+    background-color: white;
+    width: 288px;
 }
 
 button {
